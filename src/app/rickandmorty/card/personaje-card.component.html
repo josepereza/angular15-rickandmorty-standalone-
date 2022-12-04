@@ -1,0 +1,15 @@
+<div class="card" >
+    <div class="card-header">
+        <span>{{personaje.name}}</span>
+    </div>
+    <img [src]="personaje.image"  alt="">
+
+<div class="card-footer">
+    <div class="badge" [ngStyle]="{'background-color': personaje.status==='Alive'? 'green' : 'red'}">
+        <span>{{personaje.status}}</span>
+    </div>
+    <div class="badge">
+        <span>{{personaje.species}}</span>
+    </div>
+</div>
+    </div>

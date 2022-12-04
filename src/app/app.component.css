@@ -1,0 +1,70 @@
+nav{
+    width: 100%;
+    background-color: blue;
+    padding: 15px;
+    color: aliceblue;
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+
+.container {
+    width: 90%;
+    margin: auto;
+    
+}
+
+button{
+    padding:10px 20px;
+    background-color: blue;
+    margin-left: 20px;
+    color: aliceblue;
+    font-size: 1.3em;
+    border-radius: 40px;
+}
+button:disabled {
+    background-color: darkgrey;
+}
+
+.grid{
+    margin-top: 20px;
+    width: 100%;
+    display:grid;
+    grid-template-columns:repeat(auto-fit, minmax(300px,1fr) )  ;
+    grid-column-gap: 5px;
+
+}
+
+
+.cabezera{
+    width: 100%;
+    display:grid;
+    grid-template-columns:repeat(4, 1fr);
+    grid-column-gap: 5px;
+}
+input{
+    width: 100%;
+    padding: 10px;
+}
+.busqueda {
+    
+    width: 100%;
+
+    grid-column: 2 /  span 4;
+    padding: 10px;
+}
+@media screen and (max-width: 900px) {
+    .cabezera{
+        width: 100%;
+        display:grid;
+        grid-template-columns:1fr;
+        grid-column-gap: 5px;
+    }
+    .busqueda {
+    
+        width: 100%;
+        grid-column: 1 /  span 4;
+        padding: 10px;
+    }
+  }
+
+
